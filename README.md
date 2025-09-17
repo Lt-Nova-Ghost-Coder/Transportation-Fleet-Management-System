@@ -148,6 +148,17 @@ InsufficientFuelException → raised when journey fuel > available fuel.
 OverloadException → raised when load exceeds vehicle capacity.
 
 InvalidOperationException → raised for invalid menu operations.
+
+Example:
+Enter distance: -50
+InvalidOperationException: Distance cannot be negative!
+
+Board 60 passengers on Bus with capacity 50
+OverloadException: Passenger limit exceeded!
+
+Try journey with empty fuel tank
+InsufficientFuelException: Not enough fuel for journey!
+
 ```
 ---
 
@@ -165,13 +176,6 @@ Extensibility (easy to add new vehicle types)
 ```
 ---
 
-## 📌 Notes
-```plaintext\
-You can add, manage, simulate, and persist vehicles.
-
-Extendable to databases or REST APIs in the future.
-```
----
 
 
 
